@@ -1,0 +1,11 @@
+# Numerical package versions recorded for the completed Fig5 A100 baseline.
+# Install the appropriate public CUDA Torch wheel before the project.
+# This is a partial baseline record, not a complete server lockfile.
+torch==2.6.0
+quimb==1.12.1
+cotengra==0.7.5
+opt_einsum>=3.3,<4
+numpy>=1.26,<3
+scipy>=1.12,<2
+networkx>=3,<4
+matplotlib>=3.10,<4

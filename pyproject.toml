@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connected-response-simulation"
+version = "0.1.0"
+description = "Reproducible connected-response quantum circuit simulations for Figures 2–6"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "torch==2.6.0",
+  "quimb==1.12.1",
+  "cotengra==0.7.5",
+  "numpy>=1.26,<3",
+  "scipy>=1.12,<2",
+  "opt_einsum>=3.3,<4",
+  "networkx>=3,<4",
+  "matplotlib>=3.10,<4",
+  "pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9", "ruff>=0.11,<1"]
+
+[project.scripts]
+residual-tn = "residual_tn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+residual_tn = ["configs/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff.lint]
+select = ["F821", "F822", "F823"]

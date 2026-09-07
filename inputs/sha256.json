@@ -1,0 +1,10 @@
+{
+  "qutrit_kraus.pt": {
+    "sha256": "a96bbc1b40a464710f1da1a433b153cbeb98f1817e598dcaf1b31d33ed2ae4b8",
+    "bytes": 157835
+  },
+  "0522_reference_data.pt": {
+    "sha256": "9e22bc907e22aff687f40a2d59e96bc8c5f51b6e844103fe009f2ae2fa9bcb80",
+    "bytes": 22139704
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "model": {
+    "width": 6,
+    "length": 6,
+    "depth": 20,
+    "pieces": 1000,
+    "pattern_seed": 0,
+    "pattern_index": 6,
+    "noise_us": 5.0,
+    "kraus_tol": 1e-08
+  },
+  "numerics": {
+    "bond_cap": 64,
+    "compression_tol": 0.0001,
+    "bp_tol": 1e-10,
+    "bp_max_iter": 500,
+    "gloop_size": 8,
+    "residual_mpo_svd_tol": 0.001
+  },
+  "resources": {
+    "evolution_batch_cap": 128,
+    "readout_batch_cap": 16,
+    "allocator_gib": 76.0,
+    "reserve_gib": 4.0,
+    "cpu_threads": 4,
+    "gloop_intermediate_gib": 24.0,
+    "gloop_peak_budget_gib": 72.0,
+    "workspace_cap_gib": 64.0,
+    "admission_headroom_gib": 6.0,
+    "read_growth_target_gib": 56.0
+  },
+  "figure": "fig6"
+}

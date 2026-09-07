@@ -1,0 +1,159 @@
+{
+  "status": "code_prepared_not_production_executed",
+  "test_summary": "27 passed in 22.19s",
+  "python": "3.12.14",
+  "torch": "2.6.0+cpu",
+  "installation": "non-editable wheel in an isolated virtual environment; project imported from site-packages",
+  "portable_cli": "plan and input validation invoked from an otherwise empty working directory with Python -I",
+  "private_source_paths_required": false,
+  "public_dependency_resolution": "pip check passed",
+  "static_analysis": "ruff F821/F822/F823 passed",
+  "all_project_modules_imported": true,
+  "deferred_import_dependency_closure_checked": true,
+  "cpu_toy_checks": {
+    "qubits": 4,
+    "layers": 4,
+    "pauli_source0_max_absolute_error": 3.1008529077780622e-12,
+    "source0_checkpoint_replay_exact": true,
+    "fidelity_target_checkpoint_resume": true,
+    "fidelity_resumed_baseline_max_absolute_delta_error": 2.220446049250313e-16,
+    "ragged_norm_bp_vs_serial_tolerance": 1e-10,
+    "gloop_full_cover_vs_exact_tolerance": 1e-09,
+    "continued_bp_vs_independent_tolerance": 2e-11,
+    "stochastic_samples_and_rng_replay_exact": true,
+    "fig3_chunk_preallocation_input_immutable": true
+  },
+  "fig6_model_test": {
+    "qubits": 36,
+    "layers": 2,
+    "integration_steps": 4,
+    "scope": "local channels and residual kernel construction only; no PEPS production evolution",
+    "passed": true
+  },
+  "geometry_audits": [
+    {
+      "width": 4,
+      "length": 2,
+      "n_qubits": 8,
+      "edges": 3,
+      "pairs": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "endpoint_disjoint": true,
+      "all_diagonal": true,
+      "shared_base_route_bonds": 0,
+      "shared_base_route_vertices": 1
+    },
+    {
+      "width": 4,
+      "length": 4,
+      "n_qubits": 16,
+      "edges": 4,
+      "pairs": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "endpoint_disjoint": true,
+      "all_diagonal": true,
+      "shared_base_route_bonds": 0,
+      "shared_base_route_vertices": 0
+    },
+    {
+      "width": 5,
+      "length": 4,
+      "n_qubits": 20,
+      "edges": 4,
+      "pairs": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          17
+        ]
+      ],
+      "endpoint_disjoint": true,
+      "all_diagonal": true,
+      "shared_base_route_bonds": 0,
+      "shared_base_route_vertices": 1
+    },
+    {
+      "width": 6,
+      "length": 6,
+      "n_qubits": 36,
+      "edges": 7,
+      "pairs": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          19,
+          26
+        ],
+        [
+          22,
+          29
+        ],
+        [
+          24,
+          31
+        ],
+        [
+          28,
+          35
+        ]
+      ],
+      "endpoint_disjoint": true,
+      "all_diagonal": true,
+      "shared_base_route_bonds": 0,
+      "shared_base_route_vertices": 0
+    }
+  ],
+  "production_fig6_launched": false,
+  "production_fig6_gpu_benchmarked": false,
+  "server_connections_during_preparation": 0,
+  "plots_in_tests": "synthetic fixture only; no figure result is shipped as new scientific data"
+}

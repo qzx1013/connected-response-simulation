@@ -1,0 +1,157 @@
+{
+  "src/residual_tn/backend/physics_0522.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/physics_0522.py",
+    "origin_sha256": "fee2efe383aee76da94230266e607436c9274fe345b96736cf4b5126b4132954"
+  },
+  "src/residual_tn/backend/common_background_peps.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/common_background_peps.py",
+    "origin_sha256": "a5eeea61aac562182aefc79e4acd90418a8ace8a1278db7843b907930837a828"
+  },
+  "src/residual_tn/backend/bounded_gloop.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/bounded_gloop.py",
+    "origin_sha256": "18e031306b6c371ba08e486f1782aed45a2d15f85ea7ad4ec55b28453227f0a4"
+  },
+  "src/residual_tn/backend/kraus.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/kraus.py",
+    "origin_sha256": "e24429bfa9e3f6c09932789520961d44206231057a06294d898bc431acce876d"
+  },
+  "src/residual_tn/backend/residual_background_exact.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/residual_background_exact.py",
+    "origin_sha256": "7d6ca3e3feeee36c7e41be5896da6c88d66db2897dc512705a240fd25a98f0d4"
+  },
+  "src/residual_tn/backend/residual_magnus.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/residual_magnus.py",
+    "origin_sha256": "eb28cc09dd6007461c1214067ae5d0bbd4500582c4a002d84fe44509b529e85c"
+  },
+  "src/residual_tn/backend/channel.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/channel.py",
+    "origin_sha256": "12d11a48b0a4b11cea91cb47344c8bb48ceb768605ce3bfd230a36646d132a46"
+  },
+  "src/residual_tn/backend/context.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/context.py",
+    "origin_sha256": "fa36c6a146ba2c37a32bb67ebc58f1d83c93bcadc41872a39dca3be8c0daf6d3"
+  },
+  "src/residual_tn/backend/single_site_bp_streamed_optimized.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/single_site_bp_streamed_optimized.py",
+    "origin_sha256": "7d8b8a57628b1584b639065959036ecff03599afc07aa7a14c51aa9dd84e7da8"
+  },
+  "src/residual_tn/backend/exact_small.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/backend/tangent_bp/exact_small.py",
+    "origin_sha256": "30f148c79d34bff8734757561dd896c828dbeed2106896785e32e8257ed86964"
+  },
+  "src/residual_tn/backend/pair_accumulator.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/backend/tangent_bp/pair_accumulator.py",
+    "origin_sha256": "fa433e56df1d92048b78d1a26850ab096586de0912da7038608d9996e9220728"
+  },
+  "src/residual_tn/backend/fidelity_formula.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/backend/tangent_bp/fidelity_formula.py",
+    "origin_sha256": "020a6a9aec572c61245f7fdbfa70a11612733957237f476e558ad818b7a7ad21"
+  },
+  "src/residual_tn/peps/model.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "production.py",
+    "origin_sha256": "3c3fb32340d68ea115117934bfd2cf49441d7acf2321ebd731738c7fd51a06be"
+  },
+  "src/residual_tn/peps/source_bank.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "batch80.py",
+    "origin_sha256": "175ac486027ca170825bc3314655b8fe02e666683b9748e70b98637a464d80c9"
+  },
+  "src/residual_tn/peps/norm_batch.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "batched_norm.py",
+    "origin_sha256": "381ff79cf6cc48e5e79786ed363f1e1941b97b14bca13003e67273f62690395d"
+  },
+  "src/residual_tn/peps/compression.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "bp_compression.py",
+    "origin_sha256": "6c96acb721a73352e7f22d7e27ea618dfae2e8e992dec887401677dc24bfafa2"
+  },
+  "src/residual_tn/peps/continuation.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "bp_continuation.py",
+    "origin_sha256": "4b5c0f29bea22417fbd94b0b73836785d968e03e68e6d30c3191bc8be85b0f9c"
+  },
+  "src/residual_tn/peps/fidelity_batch.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "fidelity_batch.py",
+    "origin_sha256": "fb461eb80bea1f3cdd07edecd07018d54643e863a8acd9935c184a58cb4126e7"
+  },
+  "src/residual_tn/peps/background_cache.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "shared_background.py",
+    "origin_sha256": "c43c5efe807c05374d986711cca0dd56be6f3dfffa22682b84434db5d9ec9de6"
+  },
+  "src/residual_tn/experiments/fidelity_pairs.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "fidelity_source.py",
+    "origin_sha256": "d0b63e207581aa903a8ac361a00aa2a8436c9264dac59e3004523beb9d55d670"
+  },
+  "src/residual_tn/experiments/fidelity_controls.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "fidelity_bp_panel.py",
+    "origin_sha256": "64642c6cf457a8963c88cd27aca41474eebcad53ff7252714b535b6f3f11faa9"
+  },
+  "src/residual_tn/experiments/pauli_exact.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "exact_source.py",
+    "origin_sha256": "cbf38ef8d599ab64a1ed975d27c38317eef90fd06bf854d8c670c4f9e46e93ba"
+  },
+  "src/residual_tn/figures/fig5.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "plot_fig5.py",
+    "origin_sha256": "bae19b9517914bae52cd592109142cc7b89892d65205237fcce5eed25ff18831"
+  },
+  "src/residual_tn/experiments/fig2.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/final_six/fig2_liouville_stats.py",
+    "origin_sha256": "4a0e0156f71669db0527986c975419c89f38adb6779a9da5dc21b575d35ec148"
+  },
+  "src/residual_tn/experiments/pauli_fullstate.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/pauli_observables/compute_local_pauli_fullstate.py",
+    "origin_sha256": "1a4a9a1961f8a7c17fa22bcb3db0994b2e364d672931d946b994d7fa2573a068"
+  },
+  "src/residual_tn/experiments/fig3.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/ensemble_audits/compute_4x4_connected_ensemble_residual.py",
+    "origin_sha256": "ed60e259788b88eb40621a7d63efc4abe8a336f8a25e7cedfc4638f0da12b7e6"
+  },
+  "src/residual_tn/experiments/connected_ensemble.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/ensemble_audits/compute_4x4_connected_ensemble.py",
+    "origin_sha256": "c1b313c76cf9b508bd9b594d6b431affaaa85a486fe7e7ecf12aa1e2c471373a"
+  },
+  "src/residual_tn/experiments/cumulant_exact.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/ensemble_audits/natcomm_4x4_cumulant_audit.py",
+    "origin_sha256": "f0763e53a845e742beb5924f0f6f5feb8a8ffac0e8806e2c60157070116f126c"
+  },
+  "src/residual_tn/experiments/fig4.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/qutrit_mc/compare_qutrit_mc_fullstate_f2.py",
+    "origin_sha256": "97bcb29b414b3a9d75ed941dcdc828f9668b35939830a01c7c518ea8b3e22373"
+  },
+  "src/residual_tn/figures/fig234.py": {
+    "origin_release": "fig234_sparse_parallel_20260906",
+    "origin_path": "package/scripts/revision_20260721/build_revision_figures.py",
+    "origin_sha256": "bb55295d484bbb759c35180da56f66e2f8faa40aa1fe73ea846daf197d8d3fdb"
+  },
+  "src/residual_tn/backend/gloop_checkpoints.py": {
+    "origin_release": "fig5_panel_bp_continuation_20260906",
+    "origin_path": "runtime/gloop_checkpoints.py",
+    "origin_sha256": "5048764067e293c9edc868332237e389fc449ab2a761f856f10353bb418c46af"
+  }
+}

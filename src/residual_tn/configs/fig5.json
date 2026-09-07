@@ -1,0 +1,119 @@
+{
+  "model": {
+    "width": 5,
+    "length": 4,
+    "depth": 20,
+    "pieces": 1000,
+    "pattern_seed": 0,
+    "pattern_index": 6,
+    "noise_us": 5.0,
+    "kraus_tol": 1e-08
+  },
+  "numerics": {
+    "bond_cap": 64,
+    "compression_tol": 0.0001,
+    "bp_tol": 1e-10,
+    "bp_max_iter": 500,
+    "gloop_size": 8,
+    "residual_mpo_svd_tol": 0.001
+  },
+  "resources": {
+    "evolution_batch_cap": 128,
+    "readout_batch_cap": 16,
+    "allocator_gib": 76.0,
+    "reserve_gib": 4.0,
+    "cpu_threads": 4,
+    "gloop_intermediate_gib": 24.0,
+    "gloop_peak_budget_gib": 72.0,
+    "workspace_cap_gib": 64.0,
+    "admission_headroom_gib": 6.0,
+    "read_growth_target_gib": 56.0
+  },
+  "figure": "fig5",
+  "fidelity_controls": {
+    "source": 0,
+    "targets_per_layer": 3,
+    "sampling_seed": 20260906,
+    "compression_tolerances": [
+      0.001,
+      0.0001,
+      1e-05
+    ],
+    "read_bp_tolerances": [
+      1e-08,
+      1e-10,
+      1e-12
+    ],
+    "read_bp_caps": [
+      250,
+      500,
+      1000
+    ],
+    "gloop_size": 8,
+    "compression_scope": "full pipeline, own background per tolerance",
+    "bp_scope": "mixed BP readout only, fixed evolution and shared baseline background"
+  },
+  "jobs": [
+    {
+      "name": "exact_T5",
+      "driver": "pauli_exact",
+      "directory": "exact_T5",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4
+    },
+    {
+      "name": "pauli",
+      "driver": "pauli_peps",
+      "directory": "pauli",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4
+    },
+    {
+      "name": "exact_source0",
+      "driver": "fidelity_exact",
+      "directory": "exact_source0",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4
+    },
+    {
+      "name": "control_baseline",
+      "driver": "fidelity_compression",
+      "directory": "control_baseline",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4,
+      "compression_tol": 0.0001
+    },
+    {
+      "name": "control_compression1e-3",
+      "driver": "fidelity_compression",
+      "directory": "control_compression1e-3",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4,
+      "compression_tol": 0.001
+    },
+    {
+      "name": "control_compression1e-5",
+      "driver": "fidelity_compression",
+      "directory": "control_compression1e-5",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4,
+      "compression_tol": 1e-05
+    },
+    {
+      "name": "panel_ef",
+      "driver": "fidelity_controls",
+      "directory": "panel_ef",
+      "expected": "result.json",
+      "allocator_gib": 76.0,
+      "threads": 4
+    }
+  ],
+  "parallel_stages": 1,
+  "required_inputs": []
+}

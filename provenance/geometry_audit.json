@@ -1,0 +1,38 @@
+{
+  "fig6_pairs": [
+    [
+      1,
+      8
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      9,
+      16
+    ],
+    [
+      19,
+      26
+    ],
+    [
+      22,
+      29
+    ],
+    [
+      24,
+      31
+    ],
+    [
+      28,
+      35
+    ]
+  ],
+  "fig6_route_overlap": [
+    0,
+    0
+  ],
+  "fig6_selection_attempts": 3,
+  "existing_physical_edges_preserved": true
+}

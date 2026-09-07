@@ -1,0 +1,736 @@
+{
+  "format_version": 1,
+  "description": "Sparse diagonal residual couplings: 8q/3 edges, 16q/4, 20q/4, 36q/7. Row-major sites. Frozen physical instances independent of observables.",
+  "base_seed": 20260830,
+  "kernel_scheme": "magnus-1",
+  "geometries": [
+    {
+      "width": 4,
+      "length": 2,
+      "n_qubits": 8,
+      "base_seed": 20260830,
+      "geometry_seed": 20264832,
+      "graph_distances": [
+        2
+      ],
+      "partner_rule": "sparse diagonal nearest diagonals, endpoint degree at most one",
+      "coupling_distribution": {
+        "name": "uniform",
+        "epsilon_over_2pi_mhz_min": 0.1,
+        "epsilon_over_2pi_mhz_max": 0.5,
+        "sign": "positive"
+      },
+      "interaction_picture_kernel": {
+        "scheme": "magnus-1",
+        "available_schemes": [
+          "dyson-1",
+          "magnus-1"
+        ],
+        "background_composition": "separate intended-control and residual-operator layers composed as U0 K_res,I",
+        "shared_by_all_environmental_response_branches": true
+      },
+      "n_residual_edges": 3,
+      "edges": [
+        {
+          "q1": 1,
+          "q2": 4,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.27733639746885186,
+          "epsilon_rad_ns": 0.0017425559777224078,
+          "swap_routing": {
+            "path": [
+              1,
+              0,
+              4
+            ],
+            "forward_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "kernel_support_after_routing": [
+              0,
+              4
+            ]
+          },
+          "strength_source": "retained original edge"
+        },
+        {
+          "q1": 2,
+          "q2": 5,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.16594453114693342,
+          "epsilon_rad_ns": 0.0010426602399092172,
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash",
+          "swap_routing": {
+            "path": [
+              2,
+              1,
+              5
+            ],
+            "forward_swaps": [
+              [
+                2,
+                1
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                2,
+                1
+              ]
+            ],
+            "kernel_support_after_routing": [
+              1,
+              5
+            ]
+          }
+        },
+        {
+          "q1": 3,
+          "q2": 6,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.22428453855843405,
+          "epsilon_rad_ns": 0.0014092213172979063,
+          "swap_routing": {
+            "path": [
+              3,
+              7,
+              6
+            ],
+            "forward_swaps": [
+              [
+                3,
+                7
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                3,
+                7
+              ]
+            ],
+            "kernel_support_after_routing": [
+              7,
+              6
+            ]
+          },
+          "strength_source": "retained original edge"
+        }
+      ],
+      "selection_policy": {
+        "version": "fig234-sparse-v1",
+        "physical_edge_selection": {
+          "mode": "uniform draw over all valid endpoint-disjoint diagonal edge sets",
+          "requested_edges": 3,
+          "seed": 20264832,
+          "valid_edge_sets": 6
+        },
+        "max_endpoint_degree": 1,
+        "route_objective": "minimize overlap among shortest geometric paths after physical edge selection; full-state calculations do not use MPO routes",
+        "interpretation": "simplified model; edge selection independent of measured signals and coupling strengths"
+      }
+    },
+    {
+      "width": 4,
+      "length": 4,
+      "n_qubits": 16,
+      "base_seed": 20260830,
+      "geometry_seed": 20264834,
+      "graph_distances": [
+        2
+      ],
+      "partner_rule": "sparse diagonal nearest diagonals, endpoint degree at most one",
+      "coupling_distribution": {
+        "name": "uniform",
+        "epsilon_over_2pi_mhz_min": 0.1,
+        "epsilon_over_2pi_mhz_max": 0.5,
+        "sign": "positive"
+      },
+      "interaction_picture_kernel": {
+        "scheme": "magnus-1",
+        "available_schemes": [
+          "dyson-1",
+          "magnus-1"
+        ],
+        "background_composition": "separate intended-control and residual-operator layers composed as U0 K_res,I",
+        "shared_by_all_environmental_response_branches": true
+      },
+      "n_residual_edges": 4,
+      "edges": [
+        {
+          "q1": 1,
+          "q2": 4,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.27161579419423376,
+          "epsilon_rad_ns": 0.0017066123672791241,
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash",
+          "swap_routing": {
+            "path": [
+              1,
+              0,
+              4
+            ],
+            "forward_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "kernel_support_after_routing": [
+              0,
+              4
+            ]
+          }
+        },
+        {
+          "q1": 2,
+          "q2": 7,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.2276053876725062,
+          "epsilon_rad_ns": 0.0014300868276588049,
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash",
+          "swap_routing": {
+            "path": [
+              2,
+              3,
+              7
+            ],
+            "forward_swaps": [
+              [
+                2,
+                3
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                2,
+                3
+              ]
+            ],
+            "kernel_support_after_routing": [
+              3,
+              7
+            ]
+          }
+        },
+        {
+          "q1": 9,
+          "q2": 12,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.11406031493144475,
+          "epsilon_rad_ns": 0.0007166620949095301,
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash",
+          "swap_routing": {
+            "path": [
+              9,
+              8,
+              12
+            ],
+            "forward_swaps": [
+              [
+                9,
+                8
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                9,
+                8
+              ]
+            ],
+            "kernel_support_after_routing": [
+              8,
+              12
+            ]
+          }
+        },
+        {
+          "q1": 10,
+          "q2": 13,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.3568639386163569,
+          "epsilon_rad_ns": 0.0022422422557765317,
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash",
+          "swap_routing": {
+            "path": [
+              10,
+              14,
+              13
+            ],
+            "forward_swaps": [
+              [
+                10,
+                14
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                10,
+                14
+              ]
+            ],
+            "kernel_support_after_routing": [
+              14,
+              13
+            ]
+          }
+        }
+      ],
+      "selection_policy": {
+        "version": "fig234-sparse-v1",
+        "physical_edge_selection": {
+          "mode": "uniform draw over all valid endpoint-disjoint diagonal edge sets",
+          "requested_edges": 4,
+          "seed": 20264834,
+          "valid_edge_sets": 600
+        },
+        "max_endpoint_degree": 1,
+        "route_objective": "minimize overlap among shortest geometric paths after physical edge selection; full-state calculations do not use MPO routes",
+        "interpretation": "simplified model; edge selection independent of measured signals and coupling strengths"
+      }
+    },
+    {
+      "width": 5,
+      "length": 4,
+      "n_qubits": 20,
+      "base_seed": 20260830,
+      "geometry_seed": 20265834,
+      "graph_distances": [
+        2
+      ],
+      "partner_rule": "diagonal next-nearest neighbors only (absolute row and column offsets both 1); sparse endpoint-disjoint edge set selected before route optimization",
+      "coupling_distribution": {
+        "name": "uniform",
+        "epsilon_over_2pi_mhz_min": 0.1,
+        "epsilon_over_2pi_mhz_max": 0.5,
+        "sign": "positive"
+      },
+      "interaction_picture_kernel": {
+        "scheme": "magnus-1",
+        "available_schemes": [
+          "dyson-1",
+          "magnus-1"
+        ],
+        "background_composition": "separate intended-control and residual-operator layers composed as U0 K_res,I",
+        "shared_by_all_environmental_response_branches": true
+      },
+      "n_residual_edges": 4,
+      "edges": [
+        {
+          "q1": 1,
+          "q2": 5,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.47723098171198564,
+          "epsilon_rad_ns": 0.002998530692423638,
+          "swap_routing": {
+            "path": [
+              1,
+              0,
+              5
+            ],
+            "forward_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                1,
+                0
+              ]
+            ],
+            "kernel_support_after_routing": [
+              0,
+              5
+            ]
+          },
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash"
+        },
+        {
+          "q1": 3,
+          "q2": 9,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.29318006891166243,
+          "epsilon_rad_ns": 0.0018421047013436561,
+          "swap_routing": {
+            "path": [
+              3,
+              4,
+              9
+            ],
+            "forward_swaps": [
+              [
+                3,
+                4
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                3,
+                4
+              ]
+            ],
+            "kernel_support_after_routing": [
+              4,
+              9
+            ]
+          },
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash"
+        },
+        {
+          "q1": 10,
+          "q2": 16,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.2153838874078844,
+          "epsilon_rad_ns": 0.0013532968767644416,
+          "swap_routing": {
+            "path": [
+              10,
+              15,
+              16
+            ],
+            "forward_swaps": [
+              [
+                10,
+                15
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                10,
+                15
+              ]
+            ],
+            "kernel_support_after_routing": [
+              15,
+              16
+            ]
+          },
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash"
+        },
+        {
+          "q1": 11,
+          "q2": 17,
+          "graph_distance": 2,
+          "epsilon_over_2pi_mhz": 0.1761044015370149,
+          "epsilon_rad_ns": 0.0011064965882670262,
+          "swap_routing": {
+            "path": [
+              11,
+              16,
+              17
+            ],
+            "forward_swaps": [
+              [
+                11,
+                16
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                11,
+                16
+              ]
+            ],
+            "kernel_support_after_routing": [
+              16,
+              17
+            ]
+          },
+          "strength_source": "deterministic per-edge uniform draw; geometry seed and endpoint hash"
+        }
+      ],
+      "selection_policy": {
+        "version": "fig5-diagonal-v1",
+        "max_endpoint_degree": 1,
+        "physical_edge_selection": {
+          "mode": "uniform draw over all valid edge sets with requested count",
+          "requested_edges": 4,
+          "seed": 20265834,
+          "valid_edge_sets": 3131,
+          "interpretation": "simplified sparse model; not a measured experimental edge list"
+        },
+        "selected_edge_count": 4,
+        "geometric_capacity_upper_bound": 8,
+        "edge_sets_routed": 1,
+        "route_combinations_examined": 16,
+        "route_objective": [
+          "min summed pairwise bond overlap of dressed MPO routes over 20 layers",
+          "min maximum simultaneous bond use",
+          "min total dressed route steps",
+          "min base route bond overlap",
+          "min base route vertex overlap",
+          "lexicographic"
+        ],
+        "circuit": {
+          "layers": 20,
+          "pattern_seed": 0,
+          "pattern_index": 6
+        },
+        "source_manifest_sha256": "9374b7a1f7db42ddea51b53cc2ddc43f05e58812b8df96c7ca9569bb2c659a5f",
+        "strength_selection": "edge matching and routing do not use coupling strengths or any full-state observable"
+      }
+    },
+    {
+      "width": 6,
+      "length": 6,
+      "n_qubits": 36,
+      "base_seed": 20260830,
+      "geometry_seed": 20266836,
+      "graph_distances": [
+        2
+      ],
+      "partner_rule": "sparse endpoint-disjoint diagonal pairs",
+      "coupling_distribution": {
+        "name": "uniform",
+        "epsilon_over_2pi_mhz_min": 0.1,
+        "epsilon_over_2pi_mhz_max": 0.5,
+        "sign": "positive"
+      },
+      "interaction_picture_kernel": {
+        "scheme": "magnus-1",
+        "available_schemes": [
+          "dyson-1",
+          "magnus-1"
+        ],
+        "background_composition": "separate intended-control and residual-operator layers composed as U0 K_res,I",
+        "shared_by_all_environmental_response_branches": true
+      },
+      "n_residual_edges": 7,
+      "edges": [
+        {
+          "q1": 1,
+          "q2": 8,
+          "epsilon_over_2pi_mhz": 0.4414152522820106,
+          "epsilon_rad_ns": 0.0027734938275032995,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              1,
+              2,
+              8
+            ],
+            "forward_swaps": [
+              [
+                1,
+                2
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                1,
+                2
+              ]
+            ],
+            "kernel_support_after_routing": [
+              2,
+              8
+            ]
+          }
+        },
+        {
+          "q1": 3,
+          "q2": 10,
+          "epsilon_over_2pi_mhz": 0.22229906867612664,
+          "epsilon_rad_ns": 0.0013967462421055447,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              3,
+              4,
+              10
+            ],
+            "forward_swaps": [
+              [
+                3,
+                4
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                3,
+                4
+              ]
+            ],
+            "kernel_support_after_routing": [
+              4,
+              10
+            ]
+          }
+        },
+        {
+          "q1": 9,
+          "q2": 16,
+          "epsilon_over_2pi_mhz": 0.3570773949447248,
+          "epsilon_rad_ns": 0.002243583441442657,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              9,
+              15,
+              16
+            ],
+            "forward_swaps": [
+              [
+                9,
+                15
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                9,
+                15
+              ]
+            ],
+            "kernel_support_after_routing": [
+              15,
+              16
+            ]
+          }
+        },
+        {
+          "q1": 19,
+          "q2": 26,
+          "epsilon_over_2pi_mhz": 0.38324822076848886,
+          "epsilon_rad_ns": 0.0024080195897352875,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              19,
+              20,
+              26
+            ],
+            "forward_swaps": [
+              [
+                19,
+                20
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                19,
+                20
+              ]
+            ],
+            "kernel_support_after_routing": [
+              20,
+              26
+            ]
+          }
+        },
+        {
+          "q1": 22,
+          "q2": 29,
+          "epsilon_over_2pi_mhz": 0.4966092907239442,
+          "epsilon_rad_ns": 0.003120288198885562,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              22,
+              23,
+              29
+            ],
+            "forward_swaps": [
+              [
+                22,
+                23
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                22,
+                23
+              ]
+            ],
+            "kernel_support_after_routing": [
+              23,
+              29
+            ]
+          }
+        },
+        {
+          "q1": 24,
+          "q2": 31,
+          "epsilon_over_2pi_mhz": 0.15961490840597148,
+          "epsilon_rad_ns": 0.0010028900473032154,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              24,
+              25,
+              31
+            ],
+            "forward_swaps": [
+              [
+                24,
+                25
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                24,
+                25
+              ]
+            ],
+            "kernel_support_after_routing": [
+              25,
+              31
+            ]
+          }
+        },
+        {
+          "q1": 28,
+          "q2": 35,
+          "epsilon_over_2pi_mhz": 0.34636494846925137,
+          "epsilon_rad_ns": 0.0021762751551440145,
+          "graph_distance": 2,
+          "swap_routing": {
+            "path": [
+              28,
+              34,
+              35
+            ],
+            "forward_swaps": [
+              [
+                28,
+                34
+              ]
+            ],
+            "reverse_swaps": [
+              [
+                28,
+                34
+              ]
+            ],
+            "kernel_support_after_routing": [
+              34,
+              35
+            ]
+          }
+        }
+      ],
+      "selection_policy": {
+        "seed": 20266836,
+        "requested_edges": 7,
+        "algorithm": "uniform sample of 7 diagonal edges, rejection until endpoints distinct",
+        "attempts": 3,
+        "route_objective": "lexicographic minimum of shared bonds, shared vertices, paths over all shortest-route choices"
+      }
+    }
+  ]
+}
